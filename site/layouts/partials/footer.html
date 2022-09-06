@@ -1,6 +1,8 @@
 <footer class="global-footer">
 	<div>
-		<img src="/img/logo.svg" alt="Kaldi logo">
+		<svg height="30px">
+			<use xlink:href="#logo"></use>
+		</svg>
 		<p>Newsletter subscribe</p>
 		<p>Get awesome news from us in your inbox every two weeks. Be the first to learn about new products.</p>
 
@@ -9,15 +11,14 @@
 
 	<div>
 		<div>
-			<h3>Kaldi</h3>
 			{{ partial "navigation" . }}
 		</div>
 
 		<div>
 			<h3>Social media</h3>
 			<ul>
-				{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
-				{{ partial "social-icon" (dict "link" "#" "svg" "icons-instagram") }}
+				{{ partial "social-icon" (dict "link" "https://www.facebook.com/groups/211242846920914" "svg" "icons-facebook") }}
+				<!-- {{ partial "social-icon" (dict "link" "#" "svg" "icons-instagram") }} -->
 			</ul>
 		</div>
 	</div>

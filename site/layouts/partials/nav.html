@@ -1,8 +1,12 @@
 <header class="global-header">
-	<nav>
-		<a href="/">
-			<h1>Cloverleaf Feeds</h1>
+	<div class="container">
+		<a href="/" class="logo">
+			<svg height="30px">
+				<use xlink:href="#logo"></use>
+			</svg>
 		</a>
-		{{ partial "navigation" . }}
-	</nav>	
+		<nav>
+			{{ partial "navigation" . }}
+		</nav>	
+	</div>
 </header>

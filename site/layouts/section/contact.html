@@ -1,9 +1,6 @@
 {{ define "main" }}
 	<section class="contact">
-		<img src="{{ .Params.logo }}" alt="">
-	
-		{{ .Content }}
-	
+		<img src="{{ .Params.logo }}" alt="">	
 		<div>
 			{{ range .Params.contact_entries }}
 			<div>
@@ -11,8 +8,11 @@
 				<p>{{ .text }}</p>
 			</div>
 			{{ end }}
+
+			{{ .Content }}
+
 		</div>
 	
-		{{ partial "contact-form" . }}
+		<!-- {{ partial "contact-form" . }} -->
 	</section>
 {{ end }}

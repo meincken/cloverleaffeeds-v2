@@ -2,6 +2,17 @@
   {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
   {{ partial "short-text" .Params.blurb}}
   {{ partial "2-up" .Params }}
-  {{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
-  {{ partial "blog" . }}
+  <!-- {{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }} -->
+  <!-- {{ partial "blog" . }} -->
+  <div>
+    {{ range .Params.contact_entries }}
+    <div>
+      <h4>{{ .heading }}</h4>
+      <p>{{ .text }}</p>
+    </div>
+    {{ end }}
+
+    {{ .Content }}
+
+  </div>
 {{ end }}
