@@ -8,12 +8,21 @@
   <section>
     <h3>{{ .heading }}</h3>
     <p>{{ .description }}</p>
+
   </section>
   
   <!-- Image grid -->
   {{ partial "image-grid" . }}
   {{ end }}
   
+  <h2>Cleaning instructions</h2>
+  <ul>
+    <li>Hand wash with care in warm water using mild soap</li>
+    <li>Do not wring</li>
+    <li>Dry flat</li>
+    <li> Do not tumble dry</li>
+  </ul>
+
   <div>
     {{ range .Params.testimonials }}
       {{ partial "blockquote" . }}

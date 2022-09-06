@@ -1,7 +1,7 @@
 ---
 title: "CloverLeaf Feeds"
-subtitle: Support sustainable farming while enjoying a cup
-image: /img/home-jumbotron.jpg
+subtitle: Support sustainable farming
+image: /img/thegirls.jpg
 blurb:
     heading: Why Cloverleaf Feeds?
     text: "We're a small independent farm supply store. We offer a wide range of products for all your farming needs."

@@ -1,8 +1,8 @@
 ---
 title: Care Instructions
 type: care-instructions
-image: /img/products-jumbotron.jpg
-heading: Looking after your garement
+image: /img/thegirls.jpg
+heading: Looking after your garment
 description: >-
   Your garment is totally home produced with love and care from 100% bluefaced Leicester fleece
 intro:
