@@ -23,12 +23,7 @@
     <li> Do not tumble dry</li>
   </ul>
 
-  <div>
-    {{ range .Params.testimonials }}
-      {{ partial "blockquote" . }}
-    {{ end }}
-  </div>
-  
-  <!-- Full-width image -->
-  <img src="{{ .Params.full_image }}" alt="" class="db w-100">
+  {{ range .Params.testimonials }}
+    {{ partial "blockquote" . }}
+  {{ end }}
 {{ end }}
