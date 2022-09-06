@@ -27,7 +27,7 @@ main {
 
 .global-header,
 .global-footer {
-  background-color: green;
+  background-color: rgb(33, 116, 56);
   display: grid;
   grid-template-columns:
     [full-start] minmax(1em, 1fr) 
@@ -72,7 +72,12 @@ h5 {
 .global-header {
   .container {
     display: flex;
-    justify-content: space-between;
+    flex-flow: column;
+
+    @media (min-width: 768px) {
+      flex-flow: unset;
+      justify-content: space-between;
+    }
 
     .logo {
       color: #e1e1e1;
@@ -98,11 +103,32 @@ h5 {
   }
 }
 
+.global-footer {
+  .container {
+    color: #e1e1e1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    svg {
+      height: 3rem;
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
 .two-up > div,
 .four-up > div {
   display: grid;
   gap: 2rem;
-  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 label {
