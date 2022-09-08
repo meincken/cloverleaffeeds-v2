@@ -79,27 +79,42 @@ h5 {
       justify-content: space-between;
     }
 
-    .logo {
-      color: #e1e1e1;
-    }
+    button {
+      display: block;
 
-    ul {
-      align-items: center;
-      display: flex;
-      justify-content: center;
-    }
-
-    li {
-      a {
-        text-decoration: none;
-        text-transform: uppercase;
-        padding: 0 10px;
-
-        &:last-child {
-          padding-right: 0;
-        }
+      @media (min-width: 768px) {
+        display: none;
       }
     }
+    .logo {
+      svg {
+        color: #e1e1e1;
+        height: 3rem;
+        max-width: 100%;
+
+      }
+    }
+
+    // nav {
+    //   align-items: center;
+    //   display: flex;
+    //   justify-content: center;
+
+    //   a {
+    //     color: #e1e1e1;
+    //     padding: 0 10px;
+    //     text-decoration: none;
+    //     text-transform: uppercase;
+
+    //     &:hover {
+    //       text-decoration: underline;
+    //     }
+  
+    //     &:last-child {
+    //       padding-right: 0;
+    //     }
+    //   }
+    // }
   }
 }
 
