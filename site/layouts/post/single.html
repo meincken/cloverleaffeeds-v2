@@ -5,6 +5,11 @@
     <div>
       <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
       <p>Read in {{ .ReadingTime }} minutes</p>
+      <p>{{.Params.sheep}}</p>
+      <p>£{{.Params.price}}</p>
+      {{ if eq .Params.sold true }}
+        SOLD
+      {{ end }}
     </div>
     <div>
       <p>{{ .Description }}</p>

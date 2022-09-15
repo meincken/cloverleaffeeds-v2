@@ -1,7 +1,7 @@
 {{ define "main" }}
-  {{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "Latest stories") }}
+  {{ partial "jumbotron" (dict "imageUrl" "/img/thegirls.jpg" "title" "Items for Sale") }}
   <div>
-    <ul id="blog-list">
+    <ul class="post-list">
         {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
             <li>
               {{ .Render "li"}}

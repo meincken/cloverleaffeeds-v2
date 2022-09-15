@@ -1,0 +1,12 @@
+.post-list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2rem;
+
+  li {
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+}

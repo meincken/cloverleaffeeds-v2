@@ -17,6 +17,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Sheep", name: "sheep", widget: "text"}
+      - {label: "Price", name: "price", widget: "text"}
+      - {label: "Sold", name: "sold", widget: "boolean", default: true}
   - name: "pages"
     label: "Pages"
     files:

@@ -11,7 +11,10 @@
 			</div>
 		</div>
 
+		{{ if .buttonText }}
 		<div>
 			<a href="{{.buttonLink}}" class="btn raise">{{.buttonText}}</a>
 		</div>
+		{{ end }}
+
 </section>
